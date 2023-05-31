@@ -1,0 +1,24 @@
+extends base.pug
+
+block scripts 
+  script(src='/static/index.js')
+
+block style 
+ style 
+    include ../static/style.css 
+    include ../static/contactstyle.css 
+
+
+block content 
+  h2  Contact Me
+  form(method="post" action="/contact")
+     label(for='name') Name:
+     input(type='text' id='name' name='name' , placeholder="Enter Your Name")
+  
+     label(for='email') Email:
+     input(type='email' id='email' name='email', placeholder="Enter your Email")
+  
+     label(for='message') Message:
+     textarea(id='message' name='message' rows='5', placeholder="Write Message")
+  
+     button(type='submit') Submit

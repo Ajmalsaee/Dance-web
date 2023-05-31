@@ -1,0 +1,29 @@
+extends base.pug
+block scripts 
+  script(src='/static/index.js')
+block style
+   style
+      include ../static/style.css 
+
+block content
+  
+    section#introsection 
+     div Welcome to Dance Academy
+     div.small Hope you Enjoy this Academy
+    section#ourmission 
+     h2 Our Mission
+     div.card
+       h3 Best Teacher
+     div.card
+       h3 Full Time
+     div.card
+       h3 Best Learn
+     div.card
+       h3 Best proform
+    section#sponsorsSection
+     h2  Our Sponsers 
+     div#sponser
+       img(src="/static/apple.png", alt="Apple" ,Class="spimage1")
+       img(src="/static/hp black.png", alt="Apple" ,Class="spimage1")
+       img(src="/static/kfc pic.png", alt="Apple" ,Class="spimage")
+       img(src="/static/mr.png", alt="Apple" ,Class="spimage")

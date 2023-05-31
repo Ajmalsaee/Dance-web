@@ -1,0 +1,45 @@
+
+doctype html
+html
+  head
+    title Ajmal Dance Academy
+    style
+      include ../static/style.css
+  body 
+    nav#navbar
+      ul
+       div#logo
+          img(src="/static/d6.png", alt="logo")
+       li #[a(href="/") Home] 
+       li #[a(href="/") Services] 
+       li #[a(href="/") Class Info] 
+       li #[a(href="/") About] 
+       li #[a(href="/") Contact Us]
+
+
+    section#introsection 
+     div Welcome to Dance Academy
+     div.small Hope you Enjoy this Academy
+    section#ourmission 
+     h2 Our Mission
+     div.card
+       h3 Best Teacher
+     div.card
+       h3 Full Time
+     div.card
+       h3 Best Learn
+     div.card
+       h3 Best proform
+    section#sponsorsSection
+     h2  Our Sponsers 
+     div#sponser
+       img(src="/static/apple.png", alt="Apple" ,Class="spimage1")
+       img(src="/static/hp black.png", alt="Apple" ,Class="spimage1")
+       img(src="/static/kfc pic.png", alt="Apple" ,Class="spimage")
+       img(src="/static/mr.png", alt="Apple" ,Class="spimage")
+    
+    footer#footer 
+     p All Copy Right © Resived 2023
+         
+    script
+      include ../static/index.js
